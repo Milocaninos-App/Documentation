@@ -1,0 +1,66 @@
+{
+    "users": [
+        {
+            "id": string,
+            "name": string,
+            "email": string,
+            "password": string,
+            "address": string,
+            "telephone": string,
+            "occupation": string,
+            "birth_date": Date,
+            "adoption_list": [
+                { adoption
+                },
+                { adoption
+                },
+                { adoption
+                },
+                ...
+            ],
+            "img": string,
+            "creation_date": Date,
+            "role": string,
+            "isActive": boolean
+        }
+    ],
+    "dogs": [
+        {
+            "id": string,
+            "name": string,
+            "breed": string,
+            "birth_date": Date,
+            "genre": string,
+            "size": string,
+            "color": string,
+            "description": string,
+            "health_status": string,
+            "img": string,
+            "id_user": { user
+            },
+            "isActive": string
+        }
+    ],
+    "adoptions": [
+        {
+            "id": string,
+            "user": { user
+            },
+            "dog": { dog
+            },
+            "creation_date": string,
+            "isActive": boolean
+        }
+    ],
+    "donations": [
+        {
+            "id": string,
+            "name": string,
+            "email": string,
+            "quantity": number,
+            "donation_date": Date,
+            "payment_method": string,
+        }
+    ]
+}
+
